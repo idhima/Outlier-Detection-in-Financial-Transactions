@@ -1,0 +1,45 @@
+Outlier-Detection-Financial-Transactions/
+│
+├── src/
+│   ├── main.cpp
+│   ├── utils.cpp
+│   ├── utils.hpp
+│   ├── logging.cpp
+│   ├── logging.hpp
+│   ├── report_generator.cpp
+│   ├── report_generator.hpp
+│   ├── model_integration.cpp
+│   └── model_integration.hpp
+│
+├── web/
+│   ├── index.html
+│   ├── upload.html
+│   ├── result.html
+│   ├── script.js
+│   ├── style.css
+│   └── chart.min.js
+│
+├── ml/
+│   ├── model.py
+│   ├── input.txt
+│   └── output.txt
+│
+├── api/
+│   └── api.cpp
+│
+├── logs/
+│   ├── error.log
+│   └── info.log
+│
+├── reports/
+│   └── transaction_report.csv
+│
+├── assets/
+│   └── logo.png
+│
+├── server/
+│   └── .htaccess
+│
+├── .gitignore
+├── README.md
+└── LICENSE
