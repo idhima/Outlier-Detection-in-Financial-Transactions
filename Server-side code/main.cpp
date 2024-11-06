@@ -57,6 +57,7 @@ int main() {
 
         std::cout << "<h1>Outlier Detection Results</h1>";
         std::cout << "<table><tr><th>Transaction Index</th><th>Amount</th><th>Status</th></tr>";
+        generateReport(transactions, "reports/transaction_report.csv");
 
         for (size_t i = 0; i < transactions.size(); ++i) {
             std::cout << "<tr><td>" << i << "</td><td>$" << transactions[i] << "</td>";
@@ -76,6 +77,7 @@ int main() {
         logError("Unknown error occurred.");
         std::cout << "<p class='error'>An unknown error occurred.</p>";
     }
+
 
     displayHTMLFooter();
     return 0;
