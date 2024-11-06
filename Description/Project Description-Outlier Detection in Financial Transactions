@@ -1,0 +1,16 @@
+This project implements an advanced outlier detection system for financial transactions. It aims to identify anomalies in transaction amounts that may indicate fraudulent activity or errors. The system leverages statistical methods and machine learning techniques to detect these outliers efficiently.
+
+The project is a web-based application, where users can upload transaction data in a text file format. The backend processes this data, applies anomaly detection algorithms, and presents the results on an interactive user interface. The application also includes data visualization, secure user authentication, and the ability to generate downloadable reports.
+
+### Key Features:
+1. Outlier Detection: Using statistical methods like Z-score and machine learning models like Isolation Forest.
+2. Data Visualization: Displays transaction data and highlights outliers using charts.
+3. User Authentication: Simple login mechanism to secure access to the application.
+4. Downloadable Reports: Users can download a CSV report of transaction analysis.
+5. RESTful API: For integration with other systems, allowing transaction data to be processed remotely.
+6. Logging: Detailed logging system that captures errors and user actions for debugging and auditing.
+### Technologies Used:
+1. Backend: C++ (for logic and file processing)
+2. Frontend: HTML, CSS, JavaScript (with Chart.js for visualizations)
+3. Machine Learning: Python (for implementing Isolation Forest anomaly detection)
+4. Web Server: CGI (Common Gateway Interface) for connecting C++ backend with the web front end
