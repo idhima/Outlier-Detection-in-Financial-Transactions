@@ -31,3 +31,31 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 });
+//to display data
+function displayChart(transactions, outliers) {
+    const ctx = document.getElementById('transactionChart').getContext('2d');
+    const data = {
+        labels: transactions.map((_, index) => `T${index}`),
+        datasets: [
+            {
+                label: 'Transactions',
+                data: transactions,
+                borderColor: 'rgba(75, 192, 192, 1)',
+                backgroundColor: outliers.map(isOutlier => isOutlier ? 'rgba(255, 99, 132, 0.2)' : 'rgba(75, 192, 192, 0.2)'),
+                borderWidth: 1
+            }
+        ]
+    };
+    new Chart(ctx, {
+        type: 'bar',
+        data: data,
+        options: {
+            responsive: true,
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            }
+        }
+    });
+}
